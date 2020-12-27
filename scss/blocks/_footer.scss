@@ -1,0 +1,87 @@
+.footer{
+    background-color: #080808;
+    color: #aeb0b5;
+    &-up{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 80px 0 60px 0;
+        border-bottom: 1px solid #2c2c2c;;
+        &__link{
+            padding: 0 10px;
+            img{
+            height: 20px;
+            }
+            
+        }
+        &__socials{
+            display: flex;
+            align-items: center;
+        }
+        &__text{
+            font-size: 16px;
+            padding-right: 30px;
+        }
+        &__newsletter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &-down{
+        display: flex;
+        justify-content: space-around;
+        &__column{
+            ul{
+                list-style: none;
+                padding: 0;
+                li a{
+                    text-decoration: none;
+                    color: #aeb0b5;
+                }
+            }
+        }
+        &__contacts tr td{
+            padding-right: 30px;
+        }
+    }
+    &_input{
+        padding-top: 10px;
+        display: flex;
+        width: 300px; 
+        border: 1px solid #000; 
+        min-height: 40px; 
+        input[type="search"] {
+            background-color: transparent;
+            border: 1px solid  #aeb0b5;
+            border-right: none; 
+            border-top-left-radius: 5px; 
+            border-bottom-left-radius: 5px;
+            outline: none; 
+            -webkit-appearance: none;
+            width: 274px; 
+            vertical-align: middle; 
+            padding-left: 15px;
+           }
+        input[type="submit"] {
+            border-top-right-radius: 5px; 
+            border-bottom-right-radius: 5px;
+            width: 80px; 
+            cursor: pointer;
+            height: 40px;
+            border: 1px solid #aeb0b5;
+            border-left: none;
+            color: #aeb0b5;
+            background-color: transparent;
+           }
+    }
+}
+.copyright{
+    margin-top: 50px;
+    &__site{
+        text-decoration: none;
+        color: #fcb300;
+    }
+}
+
+   

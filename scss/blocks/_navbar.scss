@@ -1,0 +1,56 @@
+.button{
+    &_menu{
+        position: fixed;
+        z-index: 100;
+        top: 20px;
+        left: 50%;
+        border: none;
+        background-color: transparent;
+        transform: translateX(-50%);
+        cursor: pointer;
+        outline: none;
+    }
+}
+ 
+.nav{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    &-menu{  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        list-style: none;
+        padding: 0;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        &__close{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+        }
+        &__item{
+            text-align: center;
+            line-height: 90px;
+            a{
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 36px;
+            }
+        }
+    }
+    
+}
+.show{
+    display: block;
+}
+.off{
+    display: none;
+}
+// .nav:not([open]) {
+// 	display: none;
+// }
+

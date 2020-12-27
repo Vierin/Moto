@@ -1,0 +1,54 @@
+.hero{
+    background: linear-gradient(to right, #fcb300 50%, black 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-moto{
+        &__title{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 100px;
+            &-p{
+                display: block;
+                position: absolute;
+                margin: 0;
+                font-weight: 300;
+                font-size: 18px;
+            }
+            span{
+                color: #fff;
+            }
+            h1{
+                @extend %light;
+                font-weight: 300;
+                letter-spacing: 20px;
+                margin: 0;
+            }
+        }
+        &__img{
+            text-align: center;
+            max-width: 640px;
+            margin: auto;
+            img{
+                margin-top: -25%;
+            }
+        }
+    }
+    &-scroll{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 120px;
+        animation: bouncing 1.8s infinite; 
+        animation-timing-function: linear; 
+    }
+}
+
+@keyframes bouncing{
+    0%  { bottom: 120px; }
+    50% {bottom: 90px;}
+    100% {bottom: 120px;}
+  }
+
